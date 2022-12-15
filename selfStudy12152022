@@ -1,0 +1,58 @@
+#include <iostream>
+#include <iomanip>
+
+/*
+The iomanip is a library in C++ which helps us in manipulating the output of any c++ program.
+There are many functions in this library that help in manipulating the output.
+To name a few we have functions to reset flags, set fill characters, set precision, get date and time, etc.
+*/
+
+using namespace std;
+
+int main() {
+	// Floating Point Types
+
+	double doubleNum1 = 123.45, doubleNum2 = 456.789123;
+
+	cout << fixed << setprecision(1) << "Double no.1: " << doubleNum1 << endl; 
+	cout << fixed << setprecision(4) << "Double no.2: " << doubleNum2 << endl;
+	// fixed is literally fixed a value specifically, and setprecision(n) is fixing decimal points.
+
+	cout << "The number printed with width 10" << endl;
+	cout << setw(10) << doubleNum1 << endl;
+
+	cout << "The number printed with width 15" << endl;
+	cout << setw(15) << doubleNum2 << endl;
+	// setw(n) is a c++ manipulator which stands for set width.
+
+	string name = "Hi!";
+	cout << right << setw(10) << name << endl;
+	cout << left << setw(10) << name << endl;
+	// left method of stream manipulators in C++ is used to set the adjustfield format flag for the specified str stream.
+
+	//cout << setfill('*') << setw(5) << doubleNum1 << endl;
+
+	cout << setfill('^') << setw(2) << doubleNum2 << endl;
+	// setfill('char') sets char as the new fill character for the stream.
+
+  // Other types: bool and char
+	// A boolean variable is data type that can take true or false.
+	// search algorithm -> if found, found = 1 
+	bool found = true; // 1 = true, 0 = false.
+
+	if (true) {
+		cout << "I found an error here." << endl;
+	}
+
+	// if statement
+	int age = 17;
+	
+	if (age < 13) {
+		cout << "You are not old enough";
+	}
+	else {
+		cout << "You are old enough";
+	}
+
+	return 0;
+}
