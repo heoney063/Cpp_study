@@ -1,0 +1,61 @@
+#include <iostream>
+#include <limits>
+
+using namespace std;
+
+int main() {
+	// Variables 1. int == Integer
+	int numberCats = 5; // Int type. int number_cats is also okay.
+	int numberDogs = 10;
+
+	cout << "Number of cats: " << numberCats << endl; // 5
+	cout << "Number of dogs: " << numberDogs << endl; // 10
+	cout << endl;
+
+	cout << "Total number of animals: " << numberCats + numberDogs << endl;
+	cout << endl;
+
+	cout << "New dog is here!" << endl;
+
+	numberDogs += 1;
+	cout << "New number of dogs: " << numberDogs << endl; // Dogs are 11 now.
+	
+	// Variables 2. string == Letter, String
+	string letter = "This is a string. ";
+	string letter2 = "Make some more sentences!";
+
+	string letters = letter + letter2;
+
+	cout << letter << letter2 << endl;
+	cout << endl;
+	cout << "Letters are: " << letters << endl;
+	
+	// User Input: cin >>
+	cout << "Enter your name: ";
+
+	string name;
+	cin >> name;
+
+	cout << "My name is " << name << endl << endl;
+
+	cout << "Enter your date of the birth: ";
+
+	int birthday;
+	cin >> birthday;
+
+	cout << name << "'s birthday is " << birthday << endl;
+
+	// Binary Numbers 372 = 3*100 + 7*10 + 2*1 How many ten times numbers.
+	// Computer memory has bit, byte.
+
+	//Integer Type
+
+	// #include <limits> header needed.
+	cout << "Max int value: " << INT_MAX << endl;
+	cout << "Min int value: " << INT_MIN << endl;
+
+	cout << "Size of int: " << sizeof(int) << endl;
+	cout << "Size of string: " << sizeof(string) << endl;
+
+	return 0;
+}
